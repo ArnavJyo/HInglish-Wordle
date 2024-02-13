@@ -4,7 +4,7 @@ export function Keypad({ usedKeys, onKeyPress, theme }) {
   const [letters, setLetters] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/letters")
+    fetch("https://wordleserver.onrender.com/letters")
       .then((res) => res.json())
       .then((json) => {
         setLetters(json);
