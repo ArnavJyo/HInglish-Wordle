@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     if (solution === null) {
-      fetch("http://localhost:3000/solution")
+      fetch("https://wordleserver.onrender.com/solution")
         .then((res) => res.json())
         .then((words) => {
           const randomWord = words[Math.floor(Math.random() * words.length)];
