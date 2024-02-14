@@ -22,6 +22,21 @@ function App() {
 
   return (
     <div className={`theme-${theme}`}>
+        {!solution && (
+        <ProgressSpinner
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "50px",
+            height: "50px",
+          }}
+          strokeWidth='8'
+          fill='var(--surface-ground)'
+          animationDuration='.5s'
+        />
+      )}
       {solution && (
         <Wordle solution={solution} setSolution={setSolution}></Wordle>
       )}
