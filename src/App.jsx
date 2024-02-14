@@ -4,6 +4,7 @@ import { Wordle } from "../components/Wordle";
 import "./index.css";
 import ThemeToggler from "../components/ThemeToggler";
 import ThemeContext from "../contexts/ThemeContext";
+import { ProgressSpinner } from "primereact/progressspinner";
 
 function App() {
   const [solution, setSolution] = useState(null);
