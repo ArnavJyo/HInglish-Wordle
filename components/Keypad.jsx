@@ -12,9 +12,9 @@ export function Keypad({ usedKeys, onKeyPress, theme }) {
   }, []);
 
   const handleClick = (key) => {
-    if (!usedKeys[key]) {
+  
       onKeyPress({ key });
-    }
+    
   };
 
   return (
